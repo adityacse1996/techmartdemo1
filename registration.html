@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>registration form</title>
+    <link rel="stylesheet" href="tech.css">
+    <link rel="text/javascript" href="C:\Users\@ditya-p@ra$ha^\Desktop\jq\\._jquery-1.11.0.min.js"> 
+    <link rel="text/javascript" href="C:\Users\@ditya-p@ra$ha^\Desktop\jq\\angular-animate.js">
+    </head>
+    <body>
+        <div class="logo"><img alt="uiet logo" src="img/logo.jpg" height="100px" width="480px"></div>
+        <marquee class="header">w e l c o m e _t o _u i e t _t e c h m a r t....</marquee>
+         <ul> <div class="dropdown"><li><a href="techhtml.html">HOME</a></li><span class="droplist"><li>link4</li></span></div>
+            <div class="dropdown"><li><a href="Robotics.html">Robotics</a></li><img src="C:\Users\Dell\Pictures\Saved Pictures\\ty.jpg" height="400px" width="600px" class="droplist"></div>
+                <div class="dropdown"><li><a href="Coding.html">Coding</a></li><img src="C:\Users\Dell\Desktop\\logo.jpg" height="400px" width="600px" class="droplist"></div>
+                <div class="dropdown"><li><a href="Adwar.html">Adwar</a></li><img src="C:\Users\Dell\Pictures\Saved Pictures\\adi.jpg" height="400px" width="600px" class="droplist"></div>
+                 <div class="dropdown"><li><a href="Movimaking.html">Movimaking</a></li><img src="E:\web\\2.jpg" height="400px" width="600px" class="droplist"></div>
+                 <div class="dropdown"><li><a href="Games.html">Games</a></li><img src="E:\web\\1.jpg" height="400px" width="600px" class="droplist"></div>
+               <div class="dropdown"><li><a href="Junkyard.html">Junkyard</a></li><img src="E:\web\\abc.jpg" height="400px" width="600px" class="droplist"></div>
+            <div class="dropdown"><li><a href="Workshops.html">Workshops</a></li><span class="droplist"><li>link1</li></span></div>
+            <div class="dropdown"><li><a href="Noticeboard.html">NOTICE BOARD</a></li><span class="droplist"><li>link2</li></span></div>
+            <div class="dropdown"><li><a href="registration.html">REGISTRATION</a></li><span class="droplist"><li>link3</li></span></div>   
+            </ul>
+         <div class="block" style="margin-top:80px"><spam><p>Home > REGISTRATION FORM </p></spam></div>
+        <div class="form">KINDLY FILL FORM CORRECTLY ONCE SUBMITTED CORRECTION WILL NOT BE ALLOWED.<br>
+            
+            <form method="post" action="form-handler form.php" onsubmit="return checkForm(this);">
+            <br>Name<input type="text" name="name" class="input">
+                Branch<input type="text" name="branch" class="input">
+                RollNo<input type="text" name="rollno" class="input">
+                Year<input type="text" name="year" class="input">
+                Mob.No.<input type="text" name="mobno" class="input">
+                Event for Registration<input type="text" name="event" class="input">
+                College<input type="text" name="college" class="input">
+                <p><img src="/captcha.php" width="120" height="30" border="1" alt="CAPTCHA"></p>
+                <p><input type="text" size="6" maxlength="5" name="captcha" value=""><br>
+                <small>copy the digits from the image into this box</small></p>
+                <input type="Submit" name="submit" class="submit">
+            </form></div>
+<script type="text/javascript">
+  function checkForm(form)
+  {
+    if(!form.captcha.value.match(/^\d{5}$/)) {
+      alert('Please enter the CAPTCHA digits in the box provided');
+      form.captcha.focus();
+      return false;
+    }
+    return true;
+  }
+</script>
+      <?PHP
+  if($_POST && "all required variables are present") {
+    ...
+
+    session_start();
+    if($_POST['captcha'] != $_SESSION['digit']) die("Sorry, the CAPTCHA code entered was incorrect!");
+    session_destroy();
+
+    ...
+  }
+?>      
+
+    </body>
+</html>

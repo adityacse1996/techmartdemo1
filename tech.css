@@ -1,0 +1,199 @@
+body{
+    background-image: url("img/back.jpg");
+    background-blend-mode: hue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    box-shadow: 0px 8px 16px 0px;
+    rgba(80,100,50,0.2);
+    padding: 5px 5px;
+    margin: 0px;
+    position: relative;
+    top: 10px;
+    left: 500px;
+    width: 485px;
+    height: 105px;
+    overflow: hidden;
+    float: inherit;
+}
+.header{
+    font-family: cursive;
+    font-weight: 300;
+    color: gray;
+    background-color: aliceblue;
+    text-shadow: 5px;
+    border: 20px 0.2; 
+    width: 450px;
+    height: 25px;
+    margin: 0px;
+}
+.img{
+    background-color: gainsboro;
+    box-shadow: 0px 8px 16px 0px;
+    rgba(80,100,0,0.2);
+    padding: 12px 16px;
+    margin: 20px;
+    margin-top: 20px;
+    width: inherit;
+    height: inherit;
+    float: left;
+    border-radius: 15px;
+}
+spam{
+    color: chocolate;
+    font-weight: 700;
+    height: 30px;
+    position: relative;
+    float: none;
+    height: 15px;
+    width: 250px;
+    display: block;
+    margin-top: 0px;
+    left: 80px;
+   font-family: sans-serif;
+    font-style: oblique;
+}
+ul{
+    list-style-type: none;
+    margin-top: 30px;
+   float: left;
+    padding: 10px;
+    width: 1320px;
+    background-color: antiquewhite;
+}
+li a {
+    display: block;
+    width: 130px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: monospace;
+     
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+     margin: 0px;
+    padding: 0px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.dropdown .droplist {
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+    background-color: grey;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px; rgba(30,80,10,0.4);
+    padding: 12px 16px;
+    
+}
+.dropdown:hover .droplist {
+    display: block;
+}
+.box{
+    overflow: hidden;
+    width: inherit;
+   }
+.clear {
+    clear: left;
+}
+.merge{margin: 2px;
+    margin-top: 0px;
+    padding-top: 2px;
+    position: fixed;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+    float: left;
+    font-size: 16px;
+    background-color: lightgrey;
+    left: 1100px;
+}
+///////.footer{
+    height: 50px;
+    position: relative;
+    widows: inherit;
+    color: pink;
+    background-color: bisque;
+    
+}
+.block{
+    height: 50px;
+    position: relative;
+    widows: inherit;
+    color: black;
+    font-weight: 500;
+    background-color: bisque;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 4px;
+    
+}
+.form{
+    background-color: whitesmoke;
+    border-radius: 4px;
+    width: inherit;
+    height: inherit;
+    padding: 15px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: slategrey;
+    }
+.input{
+    display: block;
+    background-color: darkgrey;
+    width: 300px;
+    height: 30px;
+    float: none;
+    border-radius: 7px;
+    margin: 15px;
+}
+.input:hover{
+    background-color: ghostwhite;
+}
+.....contact{
+    width: inherit;
+    height: 500px;
+    overflow: inherit;
+
+}
+.submit{
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: orangered;
+    color: snow;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.submit:active{
+    background-color: black;
+}
+.location{
+    background-color: gainsboro;
+    border-radius: 4px;
+    width: inherit;
+    height: 400px;
+    margin: 5px;
+    font-weight: 700;
+    color: slategrey;
+   
+    }
+.contact{
+    width: inherit;
+    height: 500px;
+   background-image: url(img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    border-radius: 8px;
+    margin-top: 85px;
+        background-blend-mode: hue;
+    background-origin: inherit;
+}
